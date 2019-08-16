@@ -1,3 +1,18 @@
 // main: index.less
 
 // Navigation code here
+
+.nav-bar {
+    .flex(column, nowrap, center, center);
+    background-color: @nav-bg;
+    border-bottom: 2px solid @nav-border;
+
+    .nav-links {
+        .flex(row, nowrap, center, center);
+        a{
+            .link-style();
+            .font-styles(1.6rem, @nav-font);
+            padding: 10px 30px;
+        }
+    }
+}

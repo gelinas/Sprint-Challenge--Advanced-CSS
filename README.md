@@ -102,7 +102,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [X] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file][3]
 
-* [ ] Navigation Styles: Use the `navigation.less` file for styling.
+* [X] Navigation Styles: Use the `navigation.less` file for styling.
 
 * [ ] Main Content Styles: Use the `home-page.less` file for styling
 

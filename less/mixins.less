@@ -2,6 +2,51 @@
 
 // Mixins Here
 
+.link-style() {
+    text-decoration: none;
+    color: black;
+}
+
+
+// Parametric Mixins
+
+.flex(@flex, @flow, @justify, @align){
+    display: flex;
+    flex-flow: @flex @flow;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.font-styles(@size, @family){
+    font-size: @size;
+    font-family: @family;
+}
+
+/*
+
+
+
+
+.btn-style(@bgcolor:rgb(0, 90, 68), @width:200px, @font-color: white){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    border-radius: 10px;
+    color: @font-color;
+    .font-styles(2rem, @body-font);
+
+    &:hover{
+        background-color: @font-color;
+        color: @bgcolor;
+    }
+}
+*/
+
 // * \[ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
 
 // * \[ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.

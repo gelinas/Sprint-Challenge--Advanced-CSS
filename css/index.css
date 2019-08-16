@@ -1,3 +1,27 @@
+/*
+
+
+
+
+.btn-style(@bgcolor:rgb(0, 90, 68), @width:200px, @font-color: white){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    border-radius: 10px;
+    color: @font-color;
+    .font-styles(2rem, @body-font);
+
+    &:hover{
+        background-color: @font-color;
+        color: @bgcolor;
+    }
+}
+*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -145,6 +169,9 @@ h5 {
   font-family: 'Russo One', sans-serif;
   color: #23293B;
 }
+h1 {
+  font-size: 4.8rem;
+}
 h2 {
   font-size: 3.2rem;
 }
@@ -159,6 +186,27 @@ p {
   max-width: 800px;
   width: 100%;
   margin: 0 auto;
+}
+.nav-bar {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background-color: #F6F6F6;
+  border-bottom: 2px solid #F1F1F1;
+}
+.nav-bar .nav-links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .nav-links a {
+  text-decoration: none;
+  color: black;
+  font-size: 1.6rem;
+  font-family: #454A59;
+  padding: 10px 30px;
 }
 footer {
   color: #22283B;
@@ -178,7 +226,6 @@ footer {
 }
 .home .intro img {
   max-width: 100%;
-  margin: 10px auto;
   border-radius: 10px;
 }
 .home .space-images {
