@@ -145,11 +145,11 @@ body {
   color: #5E6164;
 }
 body {
-  padding-top: 84px;
+  padding-top: 86px;
 }
 @media only screen and (max-width: 500px) {
   body {
-    padding-top: 65px;
+    padding-top: 66px;
   }
 }
 h1,
@@ -194,12 +194,6 @@ p {
   margin: 0 auto;
 }
 .nav-bar {
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  align-items: center;
-  background-color: #F6F6F6;
-  opacity: 0.6;
   border-bottom: 2px solid #F1F1F1;
   position: fixed;
   /* Set the navbar to fixed position */
@@ -208,13 +202,29 @@ p {
   width: 100%;
   /* Full width */
 }
-.nav-bar .nav-links {
+.nav-bar .background-container {
+  background-color: #F6F6F6;
+  opacity: 0.6;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+.nav-bar .nav-container {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.nav-bar .nav-container .nav-links {
   display: flex;
   flex-flow: row nowrap;
   justify-content: center;
   align-items: center;
 }
-.nav-bar .nav-links a {
+.nav-bar .nav-container .nav-links a {
   text-decoration: none;
   color: black;
   font-size: 1.6rem;
@@ -222,7 +232,7 @@ p {
   padding: 10px 30px;
 }
 @media only screen and (max-width: 500px) {
-  .nav-bar .nav-links a {
+  .nav-bar .nav-container .nav-links a {
     font-size: 1.2rem;
     font-family: #454A59;
     padding: 10px;
