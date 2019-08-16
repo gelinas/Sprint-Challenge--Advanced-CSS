@@ -38,7 +38,29 @@
     height: 45px;
     border-radius: 10px;
     color: @font-color;
-    .font-styles(2rem, @main-font);
+    .font-styles(2.0rem, @main-font);
+
+
+    &:hover{
+        background-color: @font-color;
+        color: @bgcolor;
+        border: 2px solid @bgcolor;
+    }
+}
+
+.btn-style-mobile(@bgcolor: @btn-bg-color, @width: 100%, @font-color: white){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    width: @width;
+    height: auto;
+    border-radius: 5px;
+    color: @font-color;
+    .font-styles(1.6rem, @main-font);
+
 
     &:hover{
         background-color: @font-color;

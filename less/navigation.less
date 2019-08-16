@@ -13,6 +13,11 @@
             .link-style();
             .font-styles(1.6rem, @nav-font);
             padding: 10px 30px;
+
+            @media @phone {
+                .font-styles(1.2rem, @nav-font);
+                padding: 10px;
+            }
         }
     }
 }
