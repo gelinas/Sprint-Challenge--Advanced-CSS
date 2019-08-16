@@ -7,6 +7,11 @@
     color: black;
 }
 
+.max-image() {
+    width: 100%;
+    border-radius: 10px;
+}
+
 
 // Parametric Mixins
 
@@ -22,12 +27,7 @@
     font-family: @family;
 }
 
-/*
-
-
-
-
-.btn-style(@bgcolor:rgb(0, 90, 68), @width:200px, @font-color: white){
+.btn-style(@bgcolor: @btn-bg-color, @width: inherit, @font-color: white){
     display: block;
     background-color: @bgcolor;
     margin: 0;
@@ -38,13 +38,21 @@
     height: 45px;
     border-radius: 10px;
     color: @font-color;
-    .font-styles(2rem, @body-font);
+    .font-styles(2rem, @main-font);
 
     &:hover{
         background-color: @font-color;
         color: @bgcolor;
+        border: 2px solid @bgcolor;
     }
 }
+
+/*
+
+
+
+
+
 */
 
 // * \[ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins

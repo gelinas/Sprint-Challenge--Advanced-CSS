@@ -3,24 +3,7 @@
 
 
 
-.btn-style(@bgcolor:rgb(0, 90, 68), @width:200px, @font-color: white){
-    display: block;
-    background-color: @bgcolor;
-    margin: 0;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-    width: @width;
-    height: 45px;
-    border-radius: 10px;
-    color: @font-color;
-    .font-styles(2rem, @body-font);
 
-    &:hover{
-        background-color: @font-color;
-        color: @bgcolor;
-    }
-}
 */
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -225,7 +208,7 @@ footer {
   padding: 0 15px;
 }
 .home .intro img {
-  max-width: 100%;
+  width: 100%;
   border-radius: 10px;
 }
 .home .space-images {
@@ -263,6 +246,25 @@ footer {
 }
 .home .walk .walk-text p {
   margin-bottom: 26px;
+}
+.home .walk .walk-text .btn {
+  display: block;
+  background-color: #22283A;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  width: inherit;
+  height: 45px;
+  border-radius: 10px;
+  color: white;
+  font-size: 2rem;
+  font-family: 'Ubuntu', sans-serif;
+}
+.home .walk .walk-text .btn:hover {
+  background-color: white;
+  color: #22283A;
+  border: 2px solid #22283A;
 }
 .home .walk .walk-img {
   width: 46%;
