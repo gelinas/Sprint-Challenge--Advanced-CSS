@@ -35,13 +35,27 @@ Edit this document to include your answers after each question. Make sure to lea
 
 1. What is the difference between an adaptive website and a fully responsive website?
 
+An adaptive website senses the device, and has pre-made HTML templates that it serves based on the size/type of device connecting.
+
+A responsive website has a single template with media queries that automatically adjust the pages content based on the size of the device. Responsive websites load much faster.
+
 2. Describe what it means to be mobile first vs desktop first.
+
+Mobile first means the base HTML / CSS file is built for a phone screen width, and  styles are changed/added through “min-width” media queries (roughly 500px to expand to tablet, 800px to expand to desktop). 
+
+Desktop first means the base template is built for a desktop screen width, and styles are changed/added through “max-width” media queries (roughly 800px to shrink down to tablet, 500px to shrink down to mobile).
 
 3. What does `font-size: 62.5%` in the `html` tag do for us when using `rem` units?
 
+It sets our root font-size (the one defined in the html tag) to be relative to the user’s font settings. If all font-sizes throughout the page are defined in “rems,” that means our entire site will be cascaded off the user’s personal settings for font size.
+
 4. How would you describe preprocessing to someone new to CSS?
 
+Preprocessing lets you write, shorter, simpler, more elegant code for styling your website.  The preprocessor then turns your code in the redundant and byzantine cascades required by CSS to achieve your desired effect.
+
 5. What is your favorite concept in preprocessing? What is the concept that gives you the most trouble?
+
+Nesting! Simply making my CSS mirror my HTML makes styling much easier. The most difficult is imports— although I understand for an extremely large website this would be easier, as a solo programmer having multiple files to work from is unnecessary pain.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
@@ -50,28 +64,15 @@ You are expected to be able to answer all these questions. Your responses contri
 Follow these steps to set up your project:
 
 ### Git Set up
-
-- [ ] Create a forked copy of this project.
-- [ ] Add your project manager as collaborator on Github.
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!).
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
-- [ ] Push commits: git push origin `<firstName-lastName>`.
-	 
+COMPLETE
+ 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
-	 
-
+COMPLETE
+ 
 ### Preprocessor Set up
 
-* [ ] Verify that you have LESS installed correctly by running `lessc -v` in your terminal, if you don't get a version message back, reach out to your project manager for help.
-* [ ] Open your terminal and navigate to your preprocessing project by using the `cd` command
-* [ ] Once in your project's root folder, run the following command `less-watch-compiler less css index.less`
-* [ ] Verify your compiler is working correctly by changing the `background-color` on the `html` selector to `red` in your `index.less` file.
-* [ ] Once you see the red screen, you can delete that style and you're ready to start on the next task
+COMPLETE
 
 ## Minimum Viable Product
 
@@ -79,7 +80,7 @@ Your finished project must include all of the following requirements:
 
 ### Import LESS Files
 
-* [ ] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
+* [X] Navigate to your `index.less` file. Notice the file is blank. You have been asked to use a certain import order. That order is as follows:
 
 ```markdown
 1.variables.less
