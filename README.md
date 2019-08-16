@@ -136,7 +136,7 @@ Animated the transition of the signup button
 
 * [X] Create a fixed navigation and add some opacity to the background
 
-Fixed the navigation bar
+Fixed the navigation bar and provided opacity to just the background color of the nav bar
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
 
