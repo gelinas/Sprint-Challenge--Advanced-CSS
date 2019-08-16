@@ -1,3 +1,4 @@
+# Louis Gelinas 16AUG19
 # Sprint Challenge: Advanced CSS - Space Walkers Web Page
 
 This challenge allows you to practice the concepts and techniques learned over the past week and apply them in a concrete project. This Sprint explored advanced CSS techniques using Responsive Design and Preprocessing. During this Sprint, you studied how to use the viewport meta tag, media queries, setting up a preprocessor, and advanced use of preprocessing techniques. In your challenge this week, you will demonstrate proficiency by updating a website that is missing content as well as adding mobile styling.
@@ -22,9 +23,9 @@ The client for this challenge is _Spacewalkers Magazine_. Spacewalkers needs you
 
 In meeting the minimum viable product (MVP) specifications listed below, your web page should look like the solution design files of the desktop and mobile views:
 
-[Click here to review the home design](design-files/home-desktop.png)
+[Click here to review the home design][1]
 
-[Click here to review the mobile design](design-files/home-mobile.png)
+[Click here to review the mobile design][2]
 
 ## Self-Study Questions
 
@@ -56,13 +57,13 @@ Follow these steps to set up your project:
 - [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
 - [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly.
 - [ ] Push commits: git push origin `<firstName-lastName>`.
- 
+	 
 Follow these steps for completing your project.
 
 - [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's  Repo). **Please don't merge your own pull request**
 - [ ] Add your project manager as a reviewer on the pull-request
 - [ ] Your project manager will count the project as complete by merging the branch back into master.
- 
+	 
 
 ### Preprocessor Set up
 
@@ -98,7 +99,7 @@ _You will know everything is working properly when you see the styles enabled fo
 
 * [ ] Add a viewport meta tag to the head of your index.html page
 
-* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file](index.html)
+* [ ] [Review the provided home desktop design file](design-files/home-desktop.png). You are to build the missing navigation system and header image. You have been provided all content necessary in the [index.html file][3]
 
 * [ ] Navigation Styles: Use the `navigation.less` file for styling.
 
@@ -133,3 +134,7 @@ After finishing your required elements, you can push your work further. These go
 * [ ] Create a fixed navigation and add some opacity to the background
 
 * [ ] Create a form that would allow someone to sign up for a Spacewalkers Magazine subscription
+
+[1]:	design-files/home-desktop.png
+[2]:	design-files/home-mobile.png
+[3]:	index.html
