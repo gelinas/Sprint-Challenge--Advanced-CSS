@@ -36,6 +36,7 @@
     cursor: pointer;
     width: @width;
     height: 45px;
+    border: 2px solid @bgcolor;
     border-radius: 10px;
     color: @font-color;
     .font-styles(2.0rem, @main-font);
@@ -44,7 +45,7 @@
     &:hover{
         background-color: @font-color;
         color: @bgcolor;
-        border: 2px solid @bgcolor;
+        transition-duration: 1s;transition-timing-function: ease-in;
     }
 }
 
@@ -58,6 +59,7 @@
     width: @width;
     height: auto;
     border-radius: 5px;
+    border: 2px solid @bgcolor;
     color: @font-color;
     .font-styles(1.6rem, @main-font);
 
@@ -65,7 +67,6 @@
     &:hover{
         background-color: @font-color;
         color: @bgcolor;
-        border: 2px solid @bgcolor;
     }
 }
 
