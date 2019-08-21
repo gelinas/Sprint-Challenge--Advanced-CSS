@@ -1,1 +1,86 @@
+// main: index.less
+
 // Mixins Here
+
+.link-style() {
+    text-decoration: none;
+    color: black;
+}
+
+.max-image() {
+    width: 100%;
+    border-radius: 10px;
+}
+
+
+// Parametric Mixins
+
+.flex(@flex, @flow, @justify, @align){
+    display: flex;
+    flex-flow: @flex @flow;
+    justify-content: @justify;
+    align-items: @align;
+}
+
+.font-styles(@size, @family){
+    font-size: @size;
+    font-family: @family;
+}
+
+.btn-style(@bgcolor: @btn-bg-color, @width: inherit, @font-color: white){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    width: @width;
+    height: 45px;
+    border: 2px solid @bgcolor;
+    border-radius: 10px;
+    color: @font-color;
+    .font-styles(2.0rem, @main-font);
+
+
+    &:hover{
+        background-color: @font-color;
+        color: @bgcolor;
+        transition-duration: 1s;transition-timing-function: ease-in;
+    }
+}
+
+.btn-style-mobile(@bgcolor: @btn-bg-color, @width: 100%, @font-color: white){
+    display: block;
+    background-color: @bgcolor;
+    margin: 0;
+    padding: 25px;
+    text-align: center;
+    cursor: pointer;
+    width: @width;
+    height: auto;
+    border-radius: 5px;
+    border: 2px solid @bgcolor;
+    color: @font-color;
+    .font-styles(1.6rem, @main-font);
+
+
+    &:hover{
+        background-color: @font-color;
+        color: @bgcolor;
+    }
+}
+
+/*
+
+
+
+
+
+*/
+
+// * \[ ] LESS Mixins: Create and use 2 different mixins to aid your styling. Use the `mixins.less` file for your mixins
+
+// * \[ ] LESS Parametric Mixin: create a parametric mixin that is used to create the `sign up` button styles.
+// * \[ ]  Use at least 2 parameters to create your button
+
+// * \[ ] Create a hover state that swaps the background color and font color of the base button styles.
